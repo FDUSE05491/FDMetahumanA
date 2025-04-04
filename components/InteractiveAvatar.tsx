@@ -220,16 +220,6 @@ export default function InteractiveAvatar() {
     <div className="w-full flex flex-col">
       {/* <Card>
         <CardBody className="h-[500px] flex flex-col justify-center "> */}
-       <Button isIconOnly size="md" className="bg-gradient-to-tr from-indigo-500 to-indigo-300 text-white rounded-lg w-[200px]" color="primary">
-              <div style={{ textAlign: "center", padding: "50px" }}>
-                <div style={{ fontSize: "16px", fontWeight: "bold" }}>
-                  <p>
-                    {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}:
-                    {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}
-                  </p>
-                </div>
-              </div>
-              </Button>
       {stream ? (
         <div className="h-[500px] w-[600px] justify-center items-center flex rounded-lg overflow-hidden">
           <video
